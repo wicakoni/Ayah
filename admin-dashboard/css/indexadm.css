@@ -15,6 +15,8 @@ body {
     color: #fff;
     padding: 15px 20px;
     text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .layout {
@@ -27,6 +29,7 @@ body {
     background: #3d2406;
     color: #fff;
     padding: 20px;
+    font-size: 20px;
 }
 
 .sidebar ul {
@@ -36,8 +39,15 @@ body {
 .sidebar li {
     margin-bottom: 15px;
     cursor: pointer;
+    transition:transform 0.7s ease;
+    padding-left: 3px;
 }
-
+.sidebar li:hover {
+    background-color:#8b5614 ;
+    border-radius: 5px;
+    border: 1px solid #ed8f1d;
+    transform: translateX(8px)
+}
 .main-content {
     flex: 1;
     padding: 30px;
@@ -99,6 +109,7 @@ hr {
     font-weight: bold;
     font-size: 20px;
     color: #000000;
+    line-height: 1,5;
 
 }
 
