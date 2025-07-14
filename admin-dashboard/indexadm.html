@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Admin Dasboard</title>
+        <link rel="stylesheet" href="css/indexadm.css">
+    </head>
+    <body>
+        <header class="navbar">
+  <h1>Dashboard</h1>
+  <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+</header>
+        
+        <div class="layout">
+            <aside id="sidebar" class="sidebar hide-mobile">
+                <ul>
+                    <li>Home</li>
+                    <li>User</li>
+                    <li>Report</li>
+                    <li>Setting</li>
+                </ul>
+            </aside>
+            <main class="main-content">
+                <h2>Welcome, Admin</h2>
+                <section class="stats-cards">
+  <div class="card blue">
+    <h3>Buyer</h3>
+    <p>1,254</p>
+  </div>
+  <div class="card green">
+    <h3>Savings</h3>
+    <p>$ 82.000.000</p>
+  </div>
+  <div class="card purple">
+    <h3>Growth</h3>
+    <p>+12.5%</p>
+  </div>
+  <div class="card orange">
+    <h3>Transactions</h3>
+    <p>1,027</p>
+  </div>
+</section>
+<hr>
+                <p class="dashboard-info">This is your Dashboard main area.</p>
+            </main>
+        </div>
+
+        <script src="js/indexadm.js"></script>
+
+        
+    </body>
+</html>
