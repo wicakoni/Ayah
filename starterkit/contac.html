@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6 bg-gray-50">
+
+    <form id="form" class="max-w-md mx-auto bg-white p-6 rounded shadow space-y-4">
+        <h2 class="text-2xl font-bold mb-2">Contact Us</h2>
+        <input id="name" class="w-full border p-2 rounded" placeholder="Name">
+        <input id="email" class="w-full border p-2 rounded" placeholder="Email">
+        <textarea id="msg" class="w-full border p-2 rounded" rows="4" placeholder="Message"></textarea>
+        <button class="bg-indigo-600 text-white px-4 py-2 rounded w-full" type="submit">Send</button>
+    </form>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', e => {
+            e.preventDefault();
+            if (!name.value || !email.value || !msg.value) {
+                alert('All fields required!');
+            } else {
+                alert('Thanks, we will reply soon!');
+                e.target.reset();
+            }
+        });
+    </script>
+</body>
+
+</html>
