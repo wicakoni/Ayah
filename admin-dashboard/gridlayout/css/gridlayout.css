@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background: #bcdefd;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 250px; /* content on left, sidebar on right */
+    gap: 20px;
+}
+
+.content {
+    background: #dceeff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar {
+    background: #0077b6;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    
+    
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    background-color: #00b4d8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    list-style-position: inside;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.9s ease; 
+}
+
+.sidebar li:hover {
+    background-color: #7fe5fa;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* stack vertikal */
+  }
+
+  .sidebar {
+    order: -1; /* pindah ke atas */
+  }
+}
